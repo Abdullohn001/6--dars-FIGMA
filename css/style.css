@@ -1,0 +1,382 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 10px */
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* normalize css problem fixed */
+h1 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* it depends on you project */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+@import "./variables.css";
+
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 10px */
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6.4rem;
+}
+
+.btn {
+  padding: 14px 45px;
+  border-radius: 2.8rem;
+  border: none;
+}
+
+/* normalize css problem fixed */
+h1 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1211px; /* it depends on you project */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.header__container {
+  padding-top: 3.4rem;
+  margin-bottom: 6.6rem;
+}
+
+.sitenav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sitenav__link {
+  color: var(--liteCream);
+  background-color: var(--black);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.75;
+
+  &:hover {
+    background-color: var(--galacticBlue);
+    color: var(--liteCream);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75.2rem;
+  margin-bottom: 8rem;
+}
+.hero-title {
+  font-size: var(--headingL-font-size);
+  font-weight: 700;
+  line-height: var(--headingL-line);
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+.hero-text {
+  font-size: var(--bodyM-font-size);
+  font-weight: 500;
+  line-height: var(--bodyM-line);
+  text-align: center;
+  color: var(--mediumBrown);
+}
+
+.services__contaienr {
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 13.6rem;
+}
+.img1{
+  width: 354px;
+  height: 364px;
+  background: #755CDE;
+  border-radius: 10px;
+
+  & h1{
+    padding-top: 300px;
+      text-align: center ;
+  }
+  & img{
+    margin-top: -300px;
+    margin-left: 200px;
+  }
+}
+
+.img2{
+  width: 164px;
+  height: 182px;
+  background: #F6A560;
+  border-radius: 10px;
+  
+  & h1{
+    padding-top: 120px;
+      text-align: center ;
+  }
+  & img {
+    margin-top: -120px;
+    margin-left: 80px;
+  }
+}
+
+.img3{
+  width: 164px;
+  height: 182px;
+  background: #F39E9E;
+  border-radius: 10px;
+  
+  & h1{
+    padding-top: 120px;
+      text-align: center ;
+  }
+  & img {
+    margin-top: -120px;
+    margin-left: 80px;
+  }
+}
+
+.img4{
+  width: 354px;
+  height: 158px;
+  border-radius: 10px;
+  background-color: #EB7565;
+  
+  & h1{
+    padding-top: 120px;
+      text-align: center ;
+  }
+  & img {
+    margin-top: -120px;
+    margin-left: 180px;
+  }
+}
+.img5{
+  width: 354px;
+  height: 182px;
+  background: #61C4B7;
+  border-radius: 10px;
+  
+  & h1{
+    padding-top: 120px;
+      text-align: center ;
+  }
+  & img {
+    margin-top: -120px;
+    margin-left: 180px;
+  }
+}
+.img6{
+  width: 354px;
+  height: 158px;
+  border-radius: 10px;
+  background: #552049;
+  
+  & h1{
+    padding-top: 120px;
+      text-align: center ;
+  }
+  & img {
+    margin-top: -120px;
+    margin-left: 180px;
+  }
+}
+.services__middle {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.servise-wrap {
+  display: flex;
+  gap: 2.4em;
+}
+
+.services__middle-top {
+  display: flex;
+  gap: 2.4rem;
+}
+.services__end {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.amy__conatainer {
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+  margin-bottom: 8.8rem;
+}
+
+.amy__text-title {
+  font-size: var(--headingM-font-size);
+  font-weight: 700;
+  line-height: var(--headingL-line);
+  color: var(--black);
+  margin-bottom: 3.4rem;
+}
+.amy__text-description {
+  font-size: var(--bodyM-font-size);
+  font-weight: 500;
+  line-height: var(--bodyM-line);
+  color: var(--mediumBrown);
+  margin-bottom: 3.2rem;
+}
+.amy__text-btn {
+  background-color: var(--lightRed);
+  color: var(--liteCream);
+
+  &:hover {
+    background-color: var(--summerYellow);
+    color: var(--liteCream);
+  }
+
+}
+.my-works{
+  height: 600px;
+  & h1{
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+.images{
+  width: 1111px;
+  margin-top: 100px;
+  display: flex;
+  gap: 30px;
+}
+.cta__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8.1rem;
+  padding-bottom: 8rem;
+  padding-right: 9.5rem;
+  padding-left: 6.5rem;
+  background-color: var(--black);
+  margin-bottom: 5.6rem;
+  border-radius: 1rem;
+}
+
+.cta__container-text {
+  max-width: 540px;
+}
+.cta__container-text-title {
+  font-size: var(--headingM-font-size);
+  font-weight: 700;
+  line-height: var(--headingM-line);
+  text-align: left;
+  color: var(--liteCream);
+  margin-bottom: 2.5rem;
+}
+.cta__container-text-description {
+  font-size: var(--bodyM-font-size);
+  font-weight: 500;
+  line-height: var(--bodyM-line);
+  text-align: left;
+  color: var(--liteCream);
+}
+
+.footer__container {
+  margin-bottom: 6.4rem;
+}
