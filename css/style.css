@@ -476,6 +476,10 @@ main {
     border-radius: 0.8rem;
   }
 
+  .image1{
+    opacity: 0;
+  }
+
   .amy__conatainer {
     display: flex;
     flex-direction: column;
